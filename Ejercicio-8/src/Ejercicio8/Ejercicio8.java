@@ -12,9 +12,9 @@ public class Ejercicio8 {
         int primosRequeridos = numeroIngresado;
 
         System.out.println("Los primeros "+numeroIngresado+" numeros primos son:");
-        for (int i = 1; contador <= primosRequeridos; i++) {
-            if (esPrimo(i) == 1){
-                System.out.println(i);
+        for (int numeroAProbar = 1; contador <= primosRequeridos; numeroAProbar++) {
+            if (esPrimo(numeroAProbar) == 1){
+                System.out.println(numeroAProbar);
                 contador ++;
             }
 
