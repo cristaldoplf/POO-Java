@@ -33,4 +33,8 @@ public class Impresora {
         }
     }
 
+    public void cagarPapel(int cantidad){
+        hojasDisponibles+=cantidad;
+    }
+
 }
