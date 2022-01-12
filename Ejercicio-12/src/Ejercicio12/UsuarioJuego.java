@@ -1,9 +1,9 @@
 package Ejercicio12;
 
 public class UsuarioJuego {
-   String nombre;
-   String clave;
-   Double puntaje;
+   private String nombre;
+   private String clave;
+   private Double puntaje;
    int nivel;
 
     public UsuarioJuego(String nombre, String clave) {
