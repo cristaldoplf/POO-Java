@@ -10,5 +10,6 @@ public class Programa {
         impre1.imprimir("Hoy es 24 de Septiembre");
 
         impre2.imprimir("Mañana es 25 de Septiembre.");
+
     }
 }
