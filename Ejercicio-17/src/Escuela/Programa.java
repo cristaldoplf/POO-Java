@@ -11,6 +11,6 @@ public class Programa {
         estudiande1.estudiar();
         profesor1.darCLase();
         administrativo1.administrar();
-        
+
     }
 }
