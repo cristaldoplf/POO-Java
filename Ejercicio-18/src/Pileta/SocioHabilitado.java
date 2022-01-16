@@ -12,7 +12,12 @@ public class SocioHabilitado extends Socio{
     }
 
     @Override public Double costoMensual(){
-        return costoPileta+getCuotaMensual();
+        if(habilitado){
+            return costoPileta+getCuotaMensual();
+        }else{
+            return getCuotaMensual();
+        }
+
     }
 
     public Double getCostoPileta() {
