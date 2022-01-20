@@ -5,10 +5,10 @@ public class Alumno {
     private String apellido;
     private int legajo;
 
-    public Alumno(String nombre, String apellido, int legajo){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.legajo = legajo;
+    public Alumno(String nom, String ape, int leg){
+        this.nombre = nom;
+        this.apellido = ape;
+        this.legajo = leg;
     }
 
     public String getNombre() {
