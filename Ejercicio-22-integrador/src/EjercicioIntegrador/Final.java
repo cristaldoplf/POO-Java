@@ -32,4 +32,20 @@ public class Final extends Examen implements Comparable {
         }
         return respuesta;
     }
+
+    public double getNotaOral() {
+        return notaOral;
+    }
+
+    public void setNotaOral(double notaOral) {
+        this.notaOral = notaOral;
+    }
+
+    public String getTemaOral() {
+        return temaOral;
+    }
+
+    public void setTemaOral(String temaOral) {
+        this.temaOral = temaOral;
+    }
 }

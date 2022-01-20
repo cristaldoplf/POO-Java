@@ -20,4 +20,20 @@ public class Parcial extends Examen {
         }
         return respuesta;
     }
+
+    public int getUnidad() {
+        return unidad;
+    }
+
+    public void setUnidad(int unidad) {
+        this.unidad = unidad;
+    }
+
+    public int getNroDeReintento() {
+        return nroDeReintento;
+    }
+
+    public void setNroDeReintento(int nroDeReintento) {
+        this.nroDeReintento = nroDeReintento;
+    }
 }
