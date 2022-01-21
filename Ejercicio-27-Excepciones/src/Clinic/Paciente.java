@@ -10,13 +10,19 @@ public class Paciente {
     Date fechaAlta;
 
 
-    Paciente(String nombre, String apellido, String historiaClinica, Date fechaInternacion)
-    {   Date hoy= new Date();
-        this.nombre=nombre;
-        this.apellido=apellido;
-        fechaAlta=null;
-        if (fechaInternacion.before(hoy))
-            this.fechaInternacion=fechaInternacion;
+    Paciente(String nombre, String apellido, String historiaClinica, Date fechaInternacion) throws PacienteException {
+
+        Date hoy = new Date();
+        if (fechaInternacion.after(hoy)){
+            throw new PacienteException("Error, ingreso una fecha de internacion posterior al dia actual");
+        }else {
+            this.fechaInternacion = fechaInternacion;
+        }
+        this.nombre = nombre;
+        this.apellido = apellido;
+        fechaAlta = null;
+
+
     }
 
     public Date getFechaInternacion() {
@@ -27,14 +33,11 @@ public class Paciente {
         return fechaAlta;
     }
 
-    public void darAlta(Date fechaAlta)
-    {
+    public void darAlta(Date fechaAlta) throws PacienteException{
         if (fechaAlta.after(fechaInternacion))
             System.out.println("Ok");
         else
-            System.out.println("No se puede");
+            throw new PacienteException("La fecha de alta no puede ser anterior a la fecha de internacion");
     }
-
-
 
 }
