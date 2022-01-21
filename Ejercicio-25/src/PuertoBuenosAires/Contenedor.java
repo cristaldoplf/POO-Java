@@ -29,7 +29,7 @@ public class Contenedor implements Comparable<Contenedor> {
         if (esPeligroso){
             respuesta = " contiene un carga peligrosa, ";
         }else {
-            respuesta = "El contendor N°"+nroIdentificacion+" no lleva una carga peligrosa";
+            respuesta = "El contendor N°"+nroIdentificacion+" no lleva una carga peligrosa, ";
         }
         if (procedencia.toLowerCase().equals("desconocida")){
             respuesta = respuesta + "Su procedencia es desconocida";
