@@ -21,4 +21,14 @@ public class Puerto {
             System.out.println(contenedores.toString());
         }
     }
+
+    public int calcularContenedoresPeligrosos(){
+        int cantidadPeligrosos = 0;
+        for(Contenedor cont:contenedores){
+            if (cont.isEsPeligroso()){
+                cantidadPeligrosos++;
+            }
+        }
+        return cantidadPeligrosos;
+    }
 }
