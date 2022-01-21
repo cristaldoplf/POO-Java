@@ -16,8 +16,7 @@ public class Puerto {
 
     public void mostrarContenedores() {
         contenedores.sort(null);
-        for (Contenedor cont : contenedores) ;
-        {
+        for (Contenedor cont : contenedores){
             System.out.println(cont.toString());
         }
     }
