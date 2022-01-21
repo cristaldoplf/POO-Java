@@ -27,7 +27,9 @@ public class Contenedor implements Comparable<Contenedor> {
     public String toString(){
         String respuesta = "";
         if (esPeligroso){
-            respuesta = "El contendor N°"+nroIdentificacion+" contiene un carga peligrosa, ";
+            respuesta = " contiene un carga peligrosa, ";
+        }else {
+            respuesta = "El contendor N°"+nroIdentificacion+" no lleva una carga peligrosa";
         }
         if (procedencia.toLowerCase().equals("desconocida")){
             respuesta = respuesta + "Su procedencia es desconocida";

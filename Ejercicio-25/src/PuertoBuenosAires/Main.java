@@ -21,7 +21,7 @@ public class Main {
         puerto1.mostrarContenedores();
         System.out.println("");
 
-        System.out.println();
-
+        System.out.println("Calculamos la cantidad de contenedores peligrosos que hay en el puerto.");
+        System.out.println(puerto1.calcularContenedoresPeligrosos());
     }
 }
