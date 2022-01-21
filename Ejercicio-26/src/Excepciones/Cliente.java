@@ -23,5 +23,15 @@ public class Cliente {
         }
     }
 
+    public void saldarDeuda(double importe) throws ClienteException{
+        if(importe > saldoEnCuenta && saldoEnCuenta > 0){
+            throw new ClienteException("Error. No puede pagar mas de lo que adeuda.");
+        }else if(saldoEnCuenta <= 0){
+            throw new ClienteException("Error. Esta intentando pagar y no tiene deuda.");
+        }else {
+            saldoEnCuenta-=importe;
+        }
+    }
+
 
 }
