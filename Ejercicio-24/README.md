@@ -1,4 +1,4 @@
-# Enunciado del Trabajo integrador N° 21.
+# Enunciado del Trabajo integrador N° 24.
 
 
 ### Objetivo

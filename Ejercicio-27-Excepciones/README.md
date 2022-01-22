@@ -1,4 +1,4 @@
-# Enunciado del Trabajo integrador N° 21.
+# Enunciado del Trabajo integrador N° 27.
 
 
 ### Objetivo
@@ -7,6 +7,7 @@ Aplicar los conocimientos de manejo de Excepciones, en un caso práctico.
 
 ### Ejercicio
 
-En un comercio donde los clientes poseen cuenta corriente, en el sistema se tiene diseñada una clase Cliente, los clientes tienen nombre, apellido y DNI, además un saldo (es la deuda que tienen con el comercio, es un saldo deudor) y un límite. Inicialmente se hace un estudio de la capacidad financiera del cliente y se establece este límite.
-Debemos crear Excepciones para utilizar con esta clase, el nombre de la clase que se nos solicita es ClienteException.
-La clase debe generar Excepciones, cuando el cliente intenta comprar y el saldo supere su límite establecido o cuando intente pagar y no tenga deuda.
+En una clínica se tiene un sistema que registra los datos del paciente cuando es internado, estos datos son nombre, apellido, DNI, fecha de internación, también posee un fecha de alta que inicialmente está en null, posteriormente cuando es dado de alta, se cambia esa fecha con la fecha correspondiente. 
+Para evitar posibles errores en la carga de datos debemos generar una Excepción personalizada que se genera cuando se crea el paciente, si la fecha de internación fuera posterior al día de hoy y cuando la fecha de alta es posterior al día de la internación.
+Para facilitar el problema se provee el código correspondiente al paciente. Comprobar en una clase Main que las Excepciones creadas funcionan correctamente.
+
