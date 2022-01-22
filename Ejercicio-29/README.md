@@ -1,15 +1,17 @@
 # Enunciado del Trabajo integrador N° 28.
 
 
-### Objetivo
-
+## Objetivo
 Modelar en UML y luego programar en Java la siguiente problemática.
 
+#### Enunciado
 
-Al mundial de fútbol la selección argentina lleva un plantel de 23 jugadores, de los cuales se conoce su posición (“ARQUERO”, “DEFENSOR”, “MEDIOCAMPISTA” o “DELANTERO”), apellido y el número de camiseta. Del plantel de 23 jugadores, es sabido que los primeros 11 son los titulares, los siguientes 7 son los suplentes y los 5 restantes son de reserva.
+Se desea un primer prototipo de sistema de reservas de viajes en tren por el interior del país. La empresa cuenta con una lista de reservas, de las cuales se conoce su código, su recorrido y la cantidad de personas que viajarán.
+Del recorrido se sabe la estación de destino y la estación de partida. Las estaciones posibles, en orden, son: Buenos Aires, Luján, Mercedes, Suipacha, Chivilcoy, Alberti y Bragado.
+Para calcular el precio de una reserva debe multiplicarse la cantidad de personas por el precio del boleto, el cual es de $50. Si el viaje fue de cabecera a cabecera (por ahora, Buenos Aires-Bragado o viceversa) se ofrece un 20% de descuento.
+La empresa nos menciona que, en el futuro, está previsto que el tren pare en más pueblos y, por ende, haya nuevas estaciones, incluso intermedias, por lo que espera que el software sea escalable.
 
-Basado en el enunciado realizar:
-
-A) El diagrama de clases que lo modelice, con sus relaciones, atributos y métodos.
-B) La programación del método obtenerReservas que devuelva (no muestre por consola) a todos los jugadores de reserva de la selección.
-C) La programación del método cantJugadores que recibe como parámetro una posición y devuelva la cantidad de jugadores en esa posición. Si la posición no es ninguna de las mencionadas arrojar una excepción.
+Con base en este enunciado realice:
+- El diagrama de clases que lo modelice, con sus relaciones, atributos y métodos.
+- La explotación del método recaudacionTotal que retorne el monto total recaudado según el precio de todas las reservas.
+- La explotación del método cantVecesRecorrida que reciba una estación por parámetro y retorna cuántas personas pasarán por esa estación, de acuerdo a las reservas existentes. Si el parámetro recibido no corresponde a ninguna de las estaciones, arrojar una excepción.
