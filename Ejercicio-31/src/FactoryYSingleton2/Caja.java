@@ -5,6 +5,12 @@ public class Caja extends Producto{
     private double ancho;
     private double altura;
 
+    public Caja(double longitud, double ancho, double altura) {
+        this.longitud = longitud;
+        this.ancho = ancho;
+        this.altura = altura;
+    }
+
     public double getLongitud() {
         return longitud;
     }
@@ -31,6 +37,6 @@ public class Caja extends Producto{
 
     @Override
     public double calcularEspacio() {
-        return 0;
+        return longitud*altura*ancho;
     }
 }

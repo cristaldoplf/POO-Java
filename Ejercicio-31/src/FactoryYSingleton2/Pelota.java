@@ -4,6 +4,10 @@ public class Pelota extends Producto{
 
     private double radio;
 
+    public Pelota(double radio) {
+        this.radio = radio;
+    }
+
     public double getRadio() {
         return radio;
     }
@@ -14,6 +18,6 @@ public class Pelota extends Producto{
 
     @Override
     public double calcularEspacio() {
-        return 0;
+        return ((Math.PI/3)*4)*(radio*radio*radio);
     }
 }

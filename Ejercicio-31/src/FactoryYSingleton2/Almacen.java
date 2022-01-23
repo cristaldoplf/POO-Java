@@ -7,7 +7,11 @@ public class Almacen {
     List<Producto> productos = new ArrayList<>();
 
     public double calcularEspacioNecesario(){
-        return 0.0;
+        double espacio = 0;
+        for (Producto prod:productos) {
+            espacio+=prod.calcularEspacio();
+        }
+        return espacio;
     }
 
     public List<Producto> getProductos() {

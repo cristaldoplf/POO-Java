@@ -13,5 +13,7 @@ public class Main {
         mascotas.getEmpleados().add(empleado);
 
         System.out.println("Total de sueldos a pagar: "+mascotas.calcularSueldoTotal(20));
+
+
     }
 }
