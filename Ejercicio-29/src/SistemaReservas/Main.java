@@ -68,6 +68,6 @@ public class Main {
         Recorrido checkeoError2 = new Recorrido("Buenos", "Chivilcoy");
         System.out.println(empresa.cantVecesRecorrida("Ali"));
         */
-        
+
     }
 }
