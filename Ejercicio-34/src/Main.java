@@ -1,3 +1,5 @@
+import ServicioReparacion.EnReparacion;
+import ServicioReparacion.EstadoFactory;
 import ServicioReparacion.Reparacion;
 
 public class Main {
@@ -15,6 +17,10 @@ public class Main {
         reparacion.pasarSigPaso();
         //reparacion.pasarSigPaso();
 
+        //EnReparacion testException = (EnReparacion) EstadoFactory.getInstance().crearEstado("asdasdsa",reparacion);
+
         //Las lineas comentadas son para probar las excepciones.
+
+
     }
 }

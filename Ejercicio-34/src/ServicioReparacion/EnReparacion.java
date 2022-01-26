@@ -25,8 +25,8 @@ public class EnReparacion implements Estado {
     }
 
     @Override
-    public void pasarSigPaso() {
-        reparacion.setEstado(new ParaEnvio(reparacion));
+    public void pasarSigPaso() throws Exception {
+        reparacion.setEstado(EstadoFactory.getInstance().crearEstado("envio",reparacion));
 
     }
 

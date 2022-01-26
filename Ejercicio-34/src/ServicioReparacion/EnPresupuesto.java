@@ -22,14 +22,14 @@ public class EnPresupuesto implements Estado {
     @Override
     public void darValorPresupusto(double valor) {
         reparacion.setPresupuesto(valor);
-        System.out.println("Se establecio el presupuesto de: "+valor+" para el articulo "+reparacion.getArticulo());
+        System.out.println("Se establecio el presupuesto de: " + valor + " para el articulo " + reparacion.getArticulo());
     }
 
     @Override
     public void pasarSigPaso() throws Exception {
-        if (reparacion.getPresupuesto()>0){
-        reparacion.setEstado(new EnReparacion(reparacion));
-        }else throw new Exception("Error, el producto necesita un presupuesto antes de avanzar al siguiente paso.");
+        if (reparacion.getPresupuesto() > 0) {
+            reparacion.setEstado(EstadoFactory.getInstance().crearEstado("reparacion",reparacion));
+        } else throw new Exception("Error, el producto necesita un presupuesto antes de avanzar al siguiente paso.");
     }
 
     @Override

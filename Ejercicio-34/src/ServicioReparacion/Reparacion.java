@@ -6,11 +6,11 @@ public class Reparacion {
     private String direccion;
     private Estado estado;
 
-    public Reparacion(String articulo, String direccion) {
+    public Reparacion(String articulo, String direccion) throws Exception {
         this.articulo = articulo;
 
         this.direccion = direccion;
-        estado = new EnPresupuesto(this);
+        estado = EstadoFactory.getInstance().crearEstado("presupuesto", this);
     }
 
     public void cambiarDireccion(String nuevaDireccion) throws Exception {
