@@ -1,8 +1,11 @@
 package ServicioReparacion;
 
 public interface Estado {
-    public void cambiarDireccion(String nuevaDireccion);
-    public void darValorPresupusto(double valor);
-    public void pasarSigPaso();
-    public void agregarRepuesto(double valor);
+    public void cambiarDireccion(String nuevaDireccion) throws Exception;
+
+    public void darValorPresupusto(double valor) throws Exception;
+
+    public void pasarSigPaso() throws Exception;
+
+    public void agregarRepuesto(double valor) throws Exception;
 }
