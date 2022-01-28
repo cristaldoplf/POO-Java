@@ -7,11 +7,15 @@ public class ProgramaIntensivo extends OfertaAcademica {
 
     @Override
     public double calcularPrecio() {
-        double total = 0;
-        for (OfertaAcademica oferta : programa) {
-            total += oferta.calcularPrecio();
+        double resultado = 0;
+        for (OfertaAcademica o : programa) {
+            resultado += o.calcularPrecio();
         }
-        return total - total * (porcentajeBonificacion / 100);
+        return resultado;
+    }
+
+    public void addOfertaAcademica(OfertaAcademica o){
+        programa.add(o);
     }
 
     public double getPorcentajeBonificacion() {

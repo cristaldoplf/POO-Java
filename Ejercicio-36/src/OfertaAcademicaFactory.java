@@ -16,11 +16,14 @@ public class OfertaAcademicaFactory<statica> {
         switch (tipo) {
             case "Curso":
                 return new Curso();
+
             case "ProgramaIntensivo":
                 return new ProgramaIntensivo();
-            default:
-                return null;
+
+
+
         }
+        return null;
     }
 
 }
